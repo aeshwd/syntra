@@ -1,0 +1,159 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 30px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cart-product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.cart-product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.cart-item-info h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.cart-item-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-controls button {
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Cart Summary */
+
+
+#subtotal, #tax, #total {
+    margin-bottom: 10px;
+}
+
+#buy-now-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#buy-now-btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#buy-now-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Empty Cart Message */
+#empty-cart-message {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#empty-cart-message h2 {
+    font-size: 1.5rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#cart-summary {
+    display: none; /* Hide by default */
+    text-align: right;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+
+#start-shopping-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#start-shopping-btn:hover {
+    background-color: #218838;
+}
+

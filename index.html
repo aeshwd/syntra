@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntra | Clothing, Electronics and Grocery Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!--Header Section-->
+    <div class="header-top mobile-hide">
+        <div class="top-left">
+            <a href="#">Blog</a>
+            <a href="#">Featured Products</a>
+            <a href="#">Wishlist</a>
+        </div>
+        <div class="top-right">
+            <a href="#">Sign Up</a>
+            <a href="#">Profile</a>
+            <a href="#">Order Tracking</a>
+        </div>
+    </div>
+
+    <div class="header-nav">
+        <div class="nav-left">
+            <div class="menu desktop-hide" onclick="showSidebar()"><i class="ri-menu-3-line"></i></div>
+            <div class="nav-logo">
+                <h2>.Syntra</h2>
+            </div>
+            <div class="nav-links left mobile-hide"> <ul>
+
+            
+               <li> <a href="#" class="home">Home</a></li>
+               <li class="has-child">  <a href="#">Shop <i class="ri-arrow-down-s-line"></i></a>
+                <div class="mega">
+                    <ul class="col">
+                       
+                        <h3>Categories</h3>
+                        <li><a href="#">Clothing</li></a>
+                        <li><a href="#">Electronics</li></a>
+                        <li> <a href="#">Grocery</li></a>
+                        <li> <a href="#">Toys</li></a>
+                         <li><a href="#">Cosmetics</li></a>
+                         <li> <a href="#">Home Appliances</li></a>
+                         <li> <a href="#">Snacks</li></a>
+                          <li><a href="#">Footwear</li></a>
+                       
+                    </ul>
+    
+                    
+                    
+                </div></li>
+               <li class="has-child"> <a href="#" class="women">Women <i class="ri-arrow-down-s-line"></i></a>
+                <div class="mega">
+                <ul class="col">
+                   
+                    <h3>Women Clothing</h3>
+                    <li><a href="#">Dresses</li></a>
+                    <li><a href="#">Jackets & Coats</li></a>
+                    <li> <a href="#">Pants</li></a>
+                    <li> <a href="#">Sweaters</li></a>
+                     <li><a href="#">SwimWear</li></a>
+                   
+                </ul>
+
+                
+                
+            </div>
+            </li>
+               <li class="has-child"> <a href="#">Men  <i class="ri-arrow-down-s-line"></i></a>
+                <div class="mega">
+                    <ul class="col">
+                       
+                        <h3>Men Clothing</h3>
+                        <li><a href="#">TShirts</li></a>
+                        <li><a href="#">Jackets & Coats</li></a>
+                        <li> <a href="#">Pants</li></a>
+                        <li> <a href="#">Sweaters</li></a>
+                         <li><a href="#">SwimWear</li></a>
+                       
+                    </ul>
+    
+                    
+                    
+                </div></li>
+               <li> <a href="#" class="sports">Sports <span class="flyer">New</span> </a> </li>  </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+         <a href="#" class="mobile-hide">  <div class="wish"><i class="ri-heart-line"></i> <span class="wish-count">0</span> </div> </a>
+         <a href="cart.html"> <div class="cart"><i class="ri-shopping-cart-2-line"></i> </div> </a> 
+        </div>
+    </div>
+
+    <!--Sidebar-->
+
+    <div class="sidebar">
+        <div class="cross" onclick="hideSidebar()">
+        <i class="ri-arrow-left-circle-fill"></i> </div>
+        <div class="side-logo">
+            <h3>.Syntra</h3>
+        </div>
+
+        <div class="side-mainlinks">
+            <ul>
+                <li><a href="#"> <i class="ri-user-3-fill"></i> Mens Wear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-user-3-fill"></i> Women Wear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-user-3-fill"></i> Kids Wear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-ram-2-fill"></i> Electronics <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-footprint-fill"></i> Footwear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Toys <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Kitchen Appliances <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Toys <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Kitchen Appliances <i class="ri-arrow-right-s-line"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/slider/slider0.jpg" alt="slider1">
+        <h3 class="small-visible">Get 40% Off on all Footware</h3>
+        <button class="small-visible">Shop Now</button>
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/slider/slider1.jpg" alt="slider2">
+        
+      </div>
+      <div class="swiper-slide">
+       <img src="assets/slider/slider2.jpg" alt="slider3">
+      </div>
+      <div class="swiper-slide">
+      <img src="assets/slider/slider3.jpg" alt="slider4">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!--Brands-->
+
+  <div class="brands">
+    <div class="im">
+        <img src="assets/brands/asus.png">
+    </div>
+
+    <div class="im">
+        <img src="assets/brands/samsung.png">
+    </div>
+
+    <div class="im">
+        <img src="assets/brands/oppo.png">
+    </div>
+
+    <div class="im">
+        <img src="assets/brands/dng.png">
+    </div>
+
+    <div class="im">
+        <img src="assets/brands/hurley.png">
+    </div>
+
+    <div class="im">
+        <img src="assets/brands/zara.png">
+    </div>
+    
+  </div>
+
+  <!--Trending Products-->
+  <div class="trending">
+    <h2>Trending Products</h2>
+  </div>
+
+  <div class="pro">
+  <div class="offer">
+     <h3>OFFER DEAL </h3>
+     <div class="offer-image">
+     <img src="assets/products/apparel4.jpg"> 
+
+    
+       </div>
+
+
+     <div class="reviews">
+     <div class="stars">
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+        <i class="ri-star-fill"></i>
+     </div>
+
+     <div class="review-count">
+        <p>(2548)</p>
+     </div>
+    </div>
+    <h3 class="name">Happy Sales Women Diwali Festival</h3>
+
+    <div class="price">
+        <div class="discount-price">$129.99</div>
+        <div class="real-price">$189.99</div>
+    </div>
+
+    <div class="stocks">
+        <h5 class="stock-number">Stocks <span>170</span> </h5>
+        <h5 class="sold-number">Sold <span>2417</span> </h5>
+        
+    </div>
+
+    <div class="progress">
+        <div class="progress-inner"></div>
+    </div>
+  </div>
+
+  
+
+  <div class="offer">
+    <h3>OFFER DEAL </h3>
+    <div class="offer-image">
+    <img src="assets/products/apparel3.jpg"> </div>
+
+
+    <div class="reviews">
+    <div class="stars">
+       <i class="ri-star-fill"></i>
+       <i class="ri-star-fill"></i>
+       <i class="ri-star-fill"></i>
+       <i class="ri-star-fill"></i>
+       <i class="ri-star-half-line"></i>
+    </div>
+
+    <div class="review-count">
+       <p>(3729)</p>
+    </div>
+   </div>
+   <h3 class="name">Black Women Coat</h3>
+
+   <div class="price">
+       <div class="discount-price">$185.99</div>
+       <div class="real-price">$219.99</div>
+   </div>
+
+   <div class="stocks">
+       <h5 class="stock-number">Stocks <span>19</span> </h5>
+       <h5 class="sold-number">Sold <span>2747</span> </h5>
+       
+   </div>
+
+   <div class="progress">
+       <div class="progress-inner2"></div>
+   </div>
+ </div>
+
+ 
+
+
+ 
+
+</div>
+
+
+<!--Filter Buttons-->
+
+<div class="filter-buttons">
+    <button class="filter-btn" onclick="filterProducts('all')">All</button>
+    <button class="filter-btn" onclick="filterProducts('women')">Women</button>
+    <button class="filter-btn" onclick="filterProducts('men')">Men</button>
+    <button class="filter-btn" onclick="filterProducts('electronics')">Electronics</button>
+    <button class="filter-btn" onclick="filterProducts('laptops')">Laptops</button>
+    <button class="filter-btn" onclick="filterProducts('home')">Home</button>
+    <button class="filter-btn" onclick="filterProducts('mens-footwear')">Men's Footwear</button>
+    <button class="filter-btn" onclick="filterProducts('womens-footwear')">Women's Footwear</button>
+  </div>
+
+  <div id="product-list" class="product-list"></div>
+
+  
+
+  <!--Footer-->
+  <div class="footer">
+    <p>Made By Aesh Goswami</p>
+  </div>
+
+    
+</body>
+<script src="js/script.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+</html>

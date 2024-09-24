@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Header Section-->
+    <div class="header-top mobile-hide">
+        <div class="top-left">
+            <a href="#">Blog</a>
+            <a href="#">Featured Products</a>
+            <a href="#">Wishlist</a>
+        </div>
+        <div class="top-right">
+            <a href="#">Sign Up</a>
+            <a href="#">Profile</a>
+            <a href="#">Order Tracking</a>
+        </div>
+    </div>
+
+    <div class="header-nav">
+        <div class="nav-left">
+            <div class="menu desktop-hide" onclick="showSidebar()"><i class="ri-menu-3-line"></i></div>
+            <div class="nav-logo">
+                <h2>.Syntra</h2>
+            </div>
+            <div class="nav-links left mobile-hide"> <ul>
+
+            
+               <li> <a href="#" class="home">Home</a></li>
+               <li class="has-child">  <a href="#">Shop <i class="ri-arrow-down-s-line"></i></a>
+                <div class="mega">
+                    <ul class="col">
+                       
+                        <h3>Categories</h3>
+                        <li><a href="#">Clothing</li></a>
+                        <li><a href="#">Electronics</li></a>
+                        <li> <a href="#">Grocery</li></a>
+                        <li> <a href="#">Toys</li></a>
+                         <li><a href="#">Cosmetics</li></a>
+                         <li> <a href="#">Home Appliances</li></a>
+                         <li> <a href="#">Snacks</li></a>
+                          <li><a href="#">Footwear</li></a>
+                       
+                    </ul>
+    
+                    
+                    
+                </div></li>
+               <li class="has-child"> <a href="#" class="women">Women <i class="ri-arrow-down-s-line"></i></a>
+                <div class="mega">
+                <ul class="col">
+                   
+                    <h3>Women Clothing</h3>
+                    <li><a href="#">Dresses</li></a>
+                    <li><a href="#">Jackets & Coats</li></a>
+                    <li> <a href="#">Pants</li></a>
+                    <li> <a href="#">Sweaters</li></a>
+                     <li><a href="#">SwimWear</li></a>
+                   
+                </ul>
+
+                
+                
+            </div>
+            </li>
+               <li class="has-child"> <a href="#">Men  <i class="ri-arrow-down-s-line"></i></a>
+                <div class="mega">
+                    <ul class="col">
+                       
+                        <h3>Men Clothing</h3>
+                        <li><a href="#">TShirts</li></a>
+                        <li><a href="#">Jackets & Coats</li></a>
+                        <li> <a href="#">Pants</li></a>
+                        <li> <a href="#">Sweaters</li></a>
+                         <li><a href="#">SwimWear</li></a>
+                       
+                    </ul>
+    
+                    
+                    
+                </div></li>
+               <li> <a href="#" class="sports">Sports <span class="flyer">New</span> </a> </li>  </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+         <a href="#" class="mobile-hide">  <div class="wish"><i class="ri-heart-line"></i> <span class="wish-count">0</span> </div> </a>
+         <a href="cart.html"> <div class="cart"><i class="ri-shopping-cart-2-line"></i> </div> </a> 
+        </div>
+    </div>
+
+    <!--Sidebar-->
+
+    <div class="sidebar">
+        <div class="cross" onclick="hideSidebar()">
+        <i class="ri-arrow-left-circle-fill"></i> </div>
+        <div class="side-logo">
+            <h3>.Syntra</h3>
+        </div>
+
+        <div class="side-mainlinks">
+            <ul>
+                <li><a href="#"> <i class="ri-user-3-fill"></i> Mens Wear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-user-3-fill"></i> Women Wear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-user-3-fill"></i> Kids Wear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-ram-2-fill"></i> Electronics <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-footprint-fill"></i> Footwear <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Toys <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Kitchen Appliances <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Toys <i class="ri-arrow-right-s-line"></i></a></li>
+                <li><a href="#"> <i class="ri-building-3-fill"></i> Kitchen Appliances <i class="ri-arrow-right-s-line"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="product-body">
+    <div class="product-details-container">
+        <h1 id="product-name"></h1>
+        
+        <img id="product-image" src="" alt="Product Image">
+
+        <div class="pricing-info">
+            <h3>Price: $<span id="product-price"></span></h3>
+            <h3 class="original">MRP $<span id="product-realprice"></span></h3>
+            <h3 id="product-discount"></h3>
+        </div>
+
+        <!-- Quantity selector -->
+        <div class="quantity-selector">
+            <button id="quantity-decrease">-</button>
+            <span id="quantity-number">1</span>
+            <button id="quantity-increase">+</button>
+        </div>
+
+        <div id="size-options" style="display: none;">
+            <h4>Select Size:</h4>
+            <button class="size-button" data-size="S" onclick="selectSize('S')">S</button>
+            <button class="size-button" data-size="M" onclick="selectSize('M')">M</button>
+            <button class="size-button" data-size="L" onclick="selectSize('L')">L</button>
+        </div>
+
+        <div class="color-options">
+            <h4>Select Color:</h4>
+            <button class="color-button" data-color="Red" onclick="selectColor('Red')" style="background-color: red; color: white;">Red</button>
+            <button class="color-button" data-color="Blue" onclick="selectColor('Blue')" style="background-color: blue; color: white;">Blue</button>
+            <button class="color-button" data-color="Black" onclick="selectColor('Black')" style="background-color: black; color: white;">Black</button>
+        </div>
+
+        <!-- Subtotal display -->
+        <div class="subtotal">
+            <h4>Subtotal: <span id="product-subtotal">$0.00</span></h4>
+        </div>
+
+        <button id="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+      <a href="index.html">  <button id="shop-more">Shop More</button> </a>
+    </div>
+
+</div>
+
+
+ <!--Footer-->
+ <div class="footer">
+    <p>Made By Aesh Goswami</p>
+  </div>
+    <script src="js/product-details.js"></script>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
